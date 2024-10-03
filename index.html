@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_Deyna_Antezana</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;        
+          }
+        .form-container {
+            max-width: 500px; 
+            margin: 20px auto; 
+            padding: 20px;
+          
+        }
+        h1 {
+            text-align: center; 
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .form-container {
+                max-width: 90%; 
+            }
+        }
+    </style>
+</head>
+<body> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid"> 
+            <img src="assets/imagenes/logo_cft (1).PNG" class="img-thumbnail" alt="Logo">
+            <a class="navbar-brand" href="#">Promedio Notas</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Estudiantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Actividad</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Material
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Ingreso de Notas</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div> 
+    </nav>
+
+    <img width="100%" height="auto" src="assets/imagenes/portada.jpeg" alt="Portada"/>
+    <center>
+        <p>Si tienes dudas usa nuestro Formulario de contactos para realizar las preguntas que necesites. Recuerda que estamos para ayudarte y ofrecerte una educación de calidad.</p>
+    </center>
+
+    <div class="form-container">
+        <h1>Formulario</h1>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingName" placeholder="Nombre del Estudiante">
+            <label for="floatingName">Nombre</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingLastName" placeholder="Apellido del Estudiante">
+            <label for="floatingLastName">Apellido</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="floatingPhone" placeholder="Teléfono del Estudiante">
+            <label for="floatingPhone">Teléfono</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingCareer" placeholder="Carrera por la cual desea consultar">
+            <label for="floatingCareer">Carrera</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingAge" placeholder="Edad del Estudiante">
+            <label for="floatingAge">Edad</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" id="floatingMessage" placeholder="Mensaje de consulta" style="height: 100px;"></textarea>
+            <label for="floatingMessage">Mensaje de consulta</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mt-3">Enviar</button>
+    </div>
+</body>
+</html>
